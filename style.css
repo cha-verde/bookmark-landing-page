@@ -1,3 +1,7 @@
+:root{
+    --color-blue-600: hsl(231, 69%, 60%);
+}
+
 body,
 h1,
 h2,
@@ -36,6 +40,48 @@ button {
   display: none;
 }
 
+body{
+    width: 100vw;
+}
+
+.font-rubik{
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+nav{
+    .brand__logo{
+        width: 10rem;
+        height: 100%;
+    }
+}
+
+.hero{
+    .hero__banner{
+        position: relative;
+       img{
+         width: 60rem;
+       }
+       .graphic{
+        width: 30rem;
+        height: 20rem;
+        position: absolute;
+        z-index: -1;
+            .half-circle{
+                background-color: var(--color-blue-600);
+                width: calc(40%);
+                height: calc(100%);
+                border-radius: 50% 0 0 50%;
+                display: inline-block;
+            }
+            .rectangle{
+                width: calc(60%);
+                height: calc(100%);
+                background-color: var(--color-blue-600);
+            }
+        }
+       }
+
+}
 .test .first {
   border: 1px solid black;
   width: 100px;
@@ -63,5 +109,3 @@ button {
   border-radius: 50%;
   grid-area: 2/7;
 }
-
-/*# sourceMappingURL=style.css.map */

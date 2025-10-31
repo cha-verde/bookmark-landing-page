@@ -7,7 +7,7 @@ const r = 50;
 
 gsap.to({theta: - Math.PI / 2}, { // -90 degrees 
     theta: 3 * Math.PI / 2, // 270, moving from -90 -> 270 = full circle
-    duration: 0.5,
+    duration: 4,
     repeat: -1,
     ease: "none",
     onUpdate(){
@@ -19,4 +19,16 @@ gsap.to({theta: - Math.PI / 2}, { // -90 degrees
         gsap.set(".second", {x,y})
     }
 });
+
+
+const im = document.querySelector(".hero__banner")
+const gr = document.querySelector(".graphic")
+
+const rect = im.getBoundingClientRect();
+console.log(rect.x)
+console.log(rect.y)
+
+
+gr.style.bottom = 0;
+gr.style.right = 0;
 
