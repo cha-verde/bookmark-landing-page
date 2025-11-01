@@ -21,11 +21,11 @@
       rel="stylesheet"
     />
   </head>
-  <body class="flex flex-col font-rubik">
+  <body class="flex flex-col font-rubik w-full">
     <header></header>
-    <nav class="flex flex-row justify-between pl-24 pr-24 pt-16 items-center">
+    <nav class="flex flex-row justify-between pl-10 pr-10 lg:pl-24 lg:pr-24 pt-16 items-center lg">
       <img src="./images/logo-bookmark.svg" alt="" class="brand__logo" />
-      <ul class="flex flex-row justify-between">
+      <ul class="flex flex-row justify-between nav__menu">
         <li class="p-5">
           <a href="" class="ml-4">FEATURES</a>
         </li>
@@ -41,12 +41,13 @@
           </button>
         </li>
       </ul>
+      <button class="nav__hamburger"><img src="./images/icon-hamburger.svg" alt=""></button>
     </nav>
 
     <main>
-      <section class="hero pt-16 flex flex-row">
-        <div class="hero__text grow-0 pl-24 flex flex-col justify-center">
-          <h1 class="text-6xl font-semibold">A Simple Bookmark Manager</h1>
+      <section class="hero pt-24 lg:pt-16 flex lg:flex-row flex-col">
+        <div class="hero__text mt-5 grow-0 lg:pl-24 pl-10 pr-10 flex flex-col justify-center text-center">
+          <h1 class="lg:text-6xl text-3xl font-semibold">A Simple Bookmark Manager</h1>
           <div class="mt-5 text-gray-500">
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
@@ -61,7 +62,7 @@
             </button>
           </div>
         </div>
-        <div class="hero__banner">
+        <div class="hero__banner lg:mt-5 order-first lg:order-last">
           <img class="hero__image" src="./images/illustration-hero.svg" />
           <div class="graphic flex flex-row">
             <div class="half-circle"></div>
@@ -71,11 +72,11 @@
       </section>
 
       <section
-        class="features flex flex-col pt-16 pl-24 pr-24 text-center pt-16 items-center"
+        class="features flex flex-col pt-32 lg:pt-16 pl-10 pr-10 lg:pl-24 lg:pr-24 text-center pt-16 items-center"
       >
         <div class="features__main">
-          <h1 class="text-4xl">Features</h1>
-          <div class="mt-5 ml-36 mr-36 text-gray-500">
+          <h1 class="text-4xl font-semibold">Features</h1>
+          <div class="mt-5 lg:ml-36 lg:mr-36 text-gray-500">
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
             can access them on the go.
@@ -83,23 +84,23 @@
         </div>
         <div class="features__slider mt-10 flex flex-col items-center">
           <div class="slider__tabs">
-            <ul class="flex flex-row text-gray-500 font-semibold">
-              <li class="ml-4">
-                <button href="" class="slider__button">
+            <ul class="flex lg:flex-row flex-col justify-center items-center text-gray-500 font-semibold">
+              <li class="lg:ml-4">
+                <button href="" class="slider__button text-center">
                   Simple Bookmarking
                 </button>
               </li>
-              <li class="ml-4">
+              <li class="lg:ml-4 mt-4">
                 <button href="" class="slider__button">Speedy Searching</button>
               </li>
-              <li class="ml-4">
+              <li class="lg:ml-4 mt-4">
                 <button href="" class="slider__button">Easy Sharing</button>
               </li>
             </ul>
           </div>
 
-          <div class="slider__content mt-10 flex flex-row items-center gap-10">
-            <div class="slider__banner flex flex-row items-center">
+          <div class="slider__content mt-10 flex lg:flex-row flex-col items-center gap-10">
+            <div class="slider__banner flex flex-row items-center w-80">
               <img
                 src="./images/illustration-features-tab-1.svg"
                 class="carousel-inactive"
@@ -116,7 +117,7 @@
                 alt=""
               />
             </div>
-            <ul class="slider__texts w-lg flex flex-col text-left">
+            <ul class="slider__texts lg:w-lg flex flex-col text-center lg:text-left">
               <li class="carousel-inactive">
                 <h1 class="font-semibold text-3xl">Bookmark in one click</h1>
                 <div class="descriptio mt-3">
@@ -162,14 +163,14 @@
       </section>
 
       <section
-        class="download pt-16 flex flex-col pl-24 pr-24 items-center justify-items-center"
+        class="download pt-32 lg:pt-16 flex flex-col pl-10 pr-10 lg:pl-24 lg:pr-24 items-center text-center"
       >
         <h1 class="font-semibold text-4xl">Download the extension</h1>
         <div class="mt-5 text-gray-500">
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </div>
-        <div class="download__options mt-5 flex flex-row gap-5">
+        <div class="download__options mt-5 flex lg:flex-row flex-col gap-5">
           <div class="shadow-md p-10 rounded-xl flex flex-col items-center">
             <img src="./images/logo-chrome.svg" alt="" />
             <div class="mt-5 font-semibold">Add to Chrome</div>
@@ -203,13 +204,13 @@
         </div>
       </section>
 
-      <section class="faq pt-16 pl-24 pr-24">
+      <section class="faq pt-32 lg:pt-16 pl-10 pr-10 lg:pl-24 lg:pr-24">
         <h1 class="font-semibold text-4xl text-center">Frequently Asked Questions</h1>
         <div class="text-center mt-5">
           Here are some of our FAQs. If you have any other questions you’d like
           answered please feel free to email us.
         </div>
-        <div class="accordion mt-5 pl-24 pr-24">
+        <div class="accordion mt-5 lg:pl-24 lg:pr-24">
           <div class="accordion__item p-2">
             <button class="flex flex-row items-center justify-between w-full"><div>What is Bookmark?</div><img src="./images/icon-arrow.svg"></button>
             <div class="answer">
@@ -259,9 +260,9 @@
       </section>
       <section class="newsletter bg-blue-500 mt-10 flex flex-col items-center pt-12">
         <div class="text-white text-center">35,000+ ALREADY JOINED</div>
-        <div class="text-4xl text-white font-semibold text-center mt-5 ml-48 mr-48">Stay up-to-date with what we’re doing </div>
+        <div class="text-2xl text-white font-semibold text-center mt-5 pl-10 pr-10 lg:ml-48 lg:mr-48">Stay up-to-date with what we’re doing </div>
         <form class="mt-5 mb-10">
-          <input class="bg-white shadow-md p-2 rounded-sm w-3xs" type="text">
+          <input class="bg-white shadow-md p-2 rounded-sm lg:w-3xs w-4xs" placeholder="Enter your email here" type="text">
           <button class="text-white bg-red-400 ml-4 shadow-md p-2 rounded-md">Contact Us</button>
         </form>
         </section>
@@ -274,22 +275,22 @@
       </div>
     </div> -->
 
-    <footer class="bg-blue-900 text-white  pl-24 pr-24">
-      <div class="above flex flex-row items-center justify-between">
-        <div class="links flex items-center">
+    <footer class="bg-blue-900 text-white  pl-10 pr-10 lg:pl-24 lg:pr-24">
+      <div class="above mt-5 flex flex-col lg:flex-row items-center justify-between">
+        <div class="links flex flex-col lg:flex-row text-center items-center">
           <img src="./images/logo-bookmark.svg" alt="" class="brand__logo text-white" />
-          <ul class="flex flex-row justify-between">
-            <li class="p-5">
+          <ul class="flex flex-col mt-2 lg:flex-row items-center">
+            <li class="lg:p-5 p-2">
               <a href="" class="ml-4">FEATURES</a>
             </li>
-            <li class="ml-4 p-5">
+            <li class="ml-4 lg:p-5 p-2">
               <a href="">PRICING</a>
             </li>
-            <li class="ml-4 p-5">
+            <li class="ml-4 lg:p-5 p-2">
               <a href="">CONTACT</a>
             </li>
         </div>
-        <div class="socials flex flex-row items-center">
+        <div class="socials flex flex-row items-center mt-5">
           <a href=""><img src="./images/icon-facebook.svg" alt="" /></a>
           <a href="" class="ml-4"><img src="./images/icon-twitter.svg" alt="" /></a>
         </div>

@@ -52,6 +52,10 @@ nav{
         width: 10rem;
         height: 100%;
     }
+
+    .nav__menu{
+        display: none;
+    }
 }
 
 .hero{
@@ -85,13 +89,18 @@ nav{
     display: none;
 }
 
-
-.answer{
-    
+.answer{    
     transition: height 0.2s ease-out;
     height: 0;
     visibility: hidden;
 }
+
+@media (min-width: 1024px){
+    .nav__menu{
+        display: block;
+    }
+}
+
 
 .test .first {
   border: 1px solid black;
