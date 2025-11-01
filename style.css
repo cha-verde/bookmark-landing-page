@@ -32,7 +32,6 @@ picture {
 
 button {
   border: none;
-  background-color: transparent;
   cursor: pointer;
 }
 
@@ -41,7 +40,7 @@ button {
 }
 
 body{
-    width: 100vw;
+    width: 100%;
 }
 
 .font-rubik{
@@ -62,26 +61,38 @@ nav{
          width: 60rem;
        }
        .graphic{
-        width: 30rem;
-        height: 20rem;
         position: absolute;
         z-index: -1;
             .half-circle{
                 background-color: var(--color-blue-600);
-                width: calc(40%);
-                height: calc(100%);
+                width: 200px;
+                height: 200px;
                 border-radius: 50% 0 0 50%;
                 display: inline-block;
             }
             .rectangle{
-                width: calc(60%);
-                height: calc(100%);
+                width: 200px;
+                height: 200px;
                 background-color: var(--color-blue-600);
             }
         }
        }
 
 }
+
+
+.carousel-inactive{
+    display: none;
+}
+
+
+.answer{
+    
+    transition: height 0.2s ease-out;
+    height: 0;
+    visibility: hidden;
+}
+
 .test .first {
   border: 1px solid black;
   width: 100px;
@@ -109,3 +120,4 @@ nav{
   border-radius: 50%;
   grid-area: 2/7;
 }
+

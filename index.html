@@ -23,36 +23,42 @@
   </head>
   <body class="flex flex-col font-rubik">
     <header></header>
-    <nav class="flex flex-row justify-between pl-24 pr-24 pt-16">
+    <nav class="flex flex-row justify-between pl-24 pr-24 pt-16 items-center">
       <img src="./images/logo-bookmark.svg" alt="" class="brand__logo" />
       <ul class="flex flex-row justify-between">
-        <li>
-          <a href="">Features</a>
+        <li class="p-5">
+          <a href="" class="ml-4">FEATURES</a>
         </li>
-        <li>
-          <a href="">Pricing</a>
+        <li class="ml-4 p-5">
+          <a href="">PRICING</a>
         </li>
-        <li>
-          <a href="">Contact</a>
+        <li class="ml-4 p-5">
+          <a href="">CONTACT</a>
         </li>
-        <li>
-          <a href="">Login</a>
+        <li class="ml-4">
+          <button class="bg-red-400 p-5 text-white rounded-md shadow-md">
+            LOGIN
+          </button>
         </li>
       </ul>
     </nav>
 
     <main>
-      <div class="hero pt-16 flex flex-row">
-        <div class="hero__text grow-0 pl-24">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>
+      <section class="hero pt-16 flex flex-row">
+        <div class="hero__text grow-0 pl-24 flex flex-col justify-center">
+          <h1 class="text-6xl font-semibold">A Simple Bookmark Manager</h1>
+          <div class="mt-5 text-gray-500">
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
-          </p>
-          <div class="hero__downloads">
-            <button>Get it on Chrome</button>
-            <button>Get it on Firefox</button>
+          </div>
+          <div class="hero__downloads mt-5 color-grey-100">
+            <button class="bg-gray-100 p-4 rounded-md shadow-md">
+              Get it on Chrome
+            </button>
+            <button class="ml-4 p-4 bg-gray-100 rounded-md shadow-md">
+              Get it on Firefox
+            </button>
           </div>
         </div>
         <div class="hero__banner">
@@ -62,154 +68,241 @@
             <div class="rectangle"></div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="features flex flex-col pt-16 pl-24 pr-24">
+      <section
+        class="features flex flex-col pt-16 pl-24 pr-24 text-center pt-16 items-center"
+      >
         <div class="features__main">
-          <h1>Features</h1>
-          <p>
+          <h1 class="text-4xl">Features</h1>
+          <div class="mt-5 ml-36 mr-36 text-gray-500">
             Our aim is to make it quick and easy for you to access your
-            favourite websites. <br>Your bookmarks sync between your devices so you
+            favourite websites. Your bookmarks sync between your devices so you
             can access them on the go.
-          </p>
+          </div>
         </div>
-        <div class="features__slider grid grid-cols-2 grid-row-2">
+        <div class="features__slider mt-10 flex flex-col items-center">
           <div class="slider__tabs">
-            <ul>
-              <li><a href="">Simple Bookmarking</a></li>
-              <li><a href="">Speedy Searching</a></li>
-              <li><a href="">Easy Sharing</a></li>
+            <ul class="flex flex-row text-gray-500 font-semibold">
+              <li class="ml-4">
+                <button href="" class="slider__button">
+                  Simple Bookmarking
+                </button>
+              </li>
+              <li class="ml-4">
+                <button href="" class="slider__button">Speedy Searching</button>
+              </li>
+              <li class="ml-4">
+                <button href="" class="slider__button">Easy Sharing</button>
+              </li>
             </ul>
           </div>
-          <div class="slider__content">
-            <ul>
-              <li>
-                <h1>Bookmark in one click</h1>
-                <p>
+
+          <div class="slider__content mt-10 flex flex-row items-center gap-10">
+            <div class="slider__banner flex flex-row items-center">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                class="carousel-inactive"
+                alt=""
+              />
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                class="carousel-inactive"
+                alt=""
+              />
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                class="carousel-inactive"
+                alt=""
+              />
+            </div>
+            <ul class="slider__texts w-lg flex flex-col text-left">
+              <li class="carousel-inactive">
+                <h1 class="font-semibold text-3xl">Bookmark in one click</h1>
+                <div class="descriptio mt-3">
                   Organize your bookmarks however you like. Our simple
                   drag-and-drop interface gives you complete control over how
                   you manage your favourite sites.
-                </p>
+                </div>
+                <button
+                class="mt-5 bg-blue-500 shadow-md p-4 rounded-md text-white"
+              >
+                More Info
+              </button>
               </li>
-              <li>
-                <h1>Intelligent search</h1>
-                <p>
+              <li class="carousel-inactive">
+                <h1 class="font-semibold text-3xl">Intelligent search</h1>
+                <div class="description mt-3">
                   Our powerful search feature will help you find saved sites in
                   no time at all. No need to trawl through all of your
                   bookmarks.
-                </p>
+                </div>
+                <button
+                class="mt-5 bg-blue-500 shadow-md p-4 rounded-md text-white"
+              >
+                More Info
+              </button>
               </li>
-              <li>
-                <h1>Share your bookmarks</h1>
-                <p>
+              <li class="carousel-inactive">
+                <h1 class="font-semibold text-3xl">Share your bookmarks</h1>
+                <div class="description mt-3">
                   Easily share your bookmarks and collections with others.
                   Create a shareable link that you can send at the click of a
                   button.
-                </p>
+                </div>
+                <button
+                class="mt-5 bg-blue-500 shadow-md p-4 rounded-md text-white"
+              >
+                More Info
+              </button>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="download pt-16 flex flex-col pl-24 pr-24 items-center justify-items-center" >
-        <h1>Download the extension</h1>
-        <p>
+      <section
+        class="download pt-16 flex flex-col pl-24 pr-24 items-center justify-items-center"
+      >
+        <h1 class="font-semibold text-4xl">Download the extension</h1>
+        <div class="mt-5 text-gray-500">
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
-        </p>
-        <div class="download__options flex flex-row">
-          <div>
-            <img src="" alt="" />
-            <h2>Add to Chrome</h2>
-            <p> Minimum version 62 </p>
-            <button>Add & Install Extension</button>
+        </div>
+        <div class="download__options mt-5 flex flex-row gap-5">
+          <div class="shadow-md p-10 rounded-xl flex flex-col items-center">
+            <img src="./images/logo-chrome.svg" alt="" />
+            <div class="mt-5 font-semibold">Add to Chrome</div>
+            <div class="mt-1 text-gray-500">Minimum version 62</div>
+            <button
+              class="mt-5 bg-blue-500 shadow-md p-4 rounded-md text-white"
+            >
+              Add & Install Extension
+            </button>
           </div>
-          <div>
-            <img src="" alt="" />
-            <h2>Add to Firefox</h2>
-            <p>  Minimum version 55</p>
-            <button> Add & Install Extension</button>
+          <div class="shadow-md p-10 rounded-xl flex flex-col items-center">
+            <img src="./images/logo-firefox.svg" alt="" />
+            <div class="mt-5 font-semibold">Add to Firefox</div>
+            <div class="mt-1 text-gray-500">Minimum version 55</div>
+            <button
+              class="mt-5 bg-blue-500 shadow-md p-4 rounded-md text-white"
+            >
+              Add & Install Extension
+            </button>
           </div>
-          <div>
-            <img src="" alt="" />
-            <h2> Add to Opera</h2>
-            <p>Minimum version
-              46</p>
-            <button>dd & Install Extension</button>
+          <div class="shadow-md p-10 rounded-xl flex flex-col items-center">
+            <img src="./images/logo-opera.svg" alt="" />
+            <div class="mt-5 font-semibold">Add to Opera</div>
+            <div class="mt-1 text-gray-500">Minimum version 46</div>
+            <button
+              class="mt-5 bg-blue-500 shadow-md p-4 rounded-md text-white"
+            >
+              Add & Install Extension
+            </button>
           </div>
         </div>
+      </section>
 
+      <section class="faq pt-16 pl-24 pr-24">
+        <h1 class="font-semibold text-4xl text-center">Frequently Asked Questions</h1>
+        <div class="text-center mt-5">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </div>
+        <div class="accordion mt-5 pl-24 pr-24">
+          <div class="accordion__item p-2">
+            <button class="flex flex-row items-center justify-between w-full"><div>What is Bookmark?</div><img src="./images/icon-arrow.svg"></button>
+            <div class="answer">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item p-2">
+            <button class="flex flex-row items-center justify-between w-full"><div>How can I request a new browser?</div><img src="./images/icon-arrow.svg"></button>
+            <div class="answer">
+              <p>
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+                eros aliquet convallis ultricies. Mauris augue massa, ultricies
+                non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+                convallis ultricies. Mauris augue massa, ultricies non ligula.
+                Suspendisse imperdiet.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item p-2">
+            <button class="flex flex-row items-center justify-between w-full"><div>Is there a mobile app?</div><img src="./images/icon-arrow.svg"></button>
+            <div class="answer">
+              <p>
+                Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+                vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+                quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex
+                et ultricies bibendum.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item p-2">
+            <button class="flex flex-row items-center justify-between w-full"><div>What about other Chromium browsers?</div><img src="./images/icon-arrow.svg"></button>
+            <div class="answer">
+              <p>
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+                mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque
+                non ut velit.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="faq pt-16 pl-24 pr-24">
-                 
-        <h1>Frequently Asked Questions </h1>
-        <p>
-          Here are some of
-          our FAQs. If you have any other questions you’d like answered please
-          feel free to email us.
-        </p>
-        <!-- Question 1 -->
-        What is Bookmark?
-        <!-- Answer 1 -->
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
-        mattis.
-        <!-- Question 2 -->
-        How can I request a new browser?
-        <!-- Answer 2 -->
-        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
-        convallis ultricies. Mauris augue massa, ultricies non ligula.
-        Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-        <!-- Question 3 -->
-        Is there a mobile app?
-        <!-- Answer 3 -->
-        Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-        vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
-        quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et
-        ultricies bibendum.
-        <!-- Question 4 -->
-        What about other Chromium browsers?
-        <!-- Answer 4 -->
-        Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi,
-        at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non
-        ut velit. 
-      </div>
-      <div class="newsletter pt-16 pl-24 pr-24">
-        <p>35,000+ already joined</p>
-         Stay up-to-date with what
-        we’re doing Contact Us Features Pricing Contact
-      </div>
+      </section>
+      <section class="newsletter bg-blue-500 mt-10 flex flex-col items-center pt-12">
+        <div class="text-white text-center">35,000+ ALREADY JOINED</div>
+        <div class="text-4xl text-white font-semibold text-center mt-5 ml-48 mr-48">Stay up-to-date with what we’re doing </div>
+        <form class="mt-5 mb-10">
+          <input class="bg-white shadow-md p-2 rounded-sm w-3xs" type="text">
+          <button class="text-white bg-red-400 ml-4 shadow-md p-2 rounded-md">Contact Us</button>
+        </form>
+        </section>
     </main>
 
-    <div class="test">
+    <!-- <div class="test">
       <div class="first"></div>
       <div class="wrapper">
         <div class="second"></div>
       </div>
-    </div>
+    </div> -->
 
-    <footer>
-      <ul class="flex flex-row justify-between">
-        <li>
-          <a href="">Features</a>
-        </li>
-        <li>
-          <a href="">Pricing</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
-      <p>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+    <footer class="bg-blue-900 text-white  pl-24 pr-24">
+      <div class="above flex flex-row items-center justify-between">
+        <div class="links flex items-center">
+          <img src="./images/logo-bookmark.svg" alt="" class="brand__logo text-white" />
+          <ul class="flex flex-row justify-between">
+            <li class="p-5">
+              <a href="" class="ml-4">FEATURES</a>
+            </li>
+            <li class="ml-4 p-5">
+              <a href="">PRICING</a>
+            </li>
+            <li class="ml-4 p-5">
+              <a href="">CONTACT</a>
+            </li>
+        </div>
+        <div class="socials flex flex-row items-center">
+          <a href=""><img src="./images/icon-facebook.svg" alt="" /></a>
+          <a href="" class="ml-4"><img src="./images/icon-twitter.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="below text-center p-5">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
