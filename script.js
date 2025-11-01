@@ -82,3 +82,22 @@ for (const item of faqItems) {
     }
   });
 }
+
+const navMobile = document.querySelector(".nav__mobile")
+const navHambuger = document.querySelector(".nav__hamburger")
+
+navHambuger.addEventListener("click", () => {
+    navMobile.style.display = "block";
+    document.documentElement.classList.add("overflow-hidden");
+    document.body.classList.add("overflow-hidden");
+
+})
+
+const closeMobileNav = document.querySelector(".nav__mobile-close")
+closeMobileNav.addEventListener("click", () => {
+    navMobile.style.display = "none";
+    document.documentElement.classList.remove("overflow-hidden");
+    document.body.classList.remove("overflow-hidden");
+
+
+})
