@@ -39,6 +39,7 @@ const sliderTexts = sliderTextContainer.querySelectorAll("li");
 
 slideImages[0].classList.toggle("carousel-inactive");
 sliderTexts[0].classList.toggle("carousel-inactive");
+sliderTexts[0].style.opacity("100");
 
 for (let i = 0; i < slideButtons.length; i++) {
   slideButtons[i].addEventListener("click", () => {
