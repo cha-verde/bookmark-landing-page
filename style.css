@@ -44,6 +44,19 @@ body{
     width: 100%;
 }
 
+button{
+    transition: background-color 0.2s ease-out;
+
+}
+
+nav li, footer li{
+    transition: color 0.2s ease-out;
+}
+
+.socials a{
+    transition: width 0.2s ease-out;
+}
+
 .font-rubik{
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
