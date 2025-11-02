@@ -36,10 +36,12 @@ const slideImages = slideContainer.querySelectorAll("img");
 const slideButtons = document.querySelectorAll(".slider__button");
 const sliderTextContainer = document.querySelector(".slider__texts");
 const sliderTexts = sliderTextContainer.querySelectorAll("li");
+const sliderTabs = document.querySelectorAll("div.slider__tabs ul li")
 
 slideImages[0].classList.toggle("carousel-inactive");
 sliderTexts[0].classList.toggle("carousel-inactive");
-sliderTexts[0].style.opacity("100");
+sliderTexts[0].style.opacity = "1";
+sliderTabs[0].classList.toggle("slider-tab-active")
 
 for (let i = 0; i < slideButtons.length; i++) {
   slideButtons[i].addEventListener("click", () => {
@@ -51,6 +53,8 @@ function changeSliderContent(ind) {
   if (slideImages[ind].classList.contains("carousel-inactive")) {
     slideImages[ind].classList.toggle("carousel-inactive");
     sliderTexts[ind].classList.toggle("carousel-inactive");
+    sliderTabs[ind].classList.toggle("slider-tab-active")
+
     for (let i = 0; i < slideImages.length; i++) {
       if (i == ind) {
         continue;
@@ -59,6 +63,8 @@ function changeSliderContent(ind) {
       if (!slideImages[i].classList.contains("carousel-inactive")) {
         slideImages[i].classList.toggle("carousel-inactive");
         sliderTexts[i].classList.toggle("carousel-inactive");
+        sliderTabs[i].classList.toggle("slider-tab-active")
+
       }
     }
   } else {
